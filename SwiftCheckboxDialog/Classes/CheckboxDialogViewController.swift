@@ -79,7 +79,7 @@ open class CheckboxDialogViewController: UIViewController, UITableViewDelegate, 
         createTitleView()
         createTitleLabel()
         createTableView()
-        createCancelButton()
+        // createCancelButton()
         createOkButton()
         createStackView()
         self.view.layoutIfNeeded()
@@ -177,7 +177,8 @@ open class CheckboxDialogViewController: UIViewController, UITableViewDelegate, 
         okButton.setTitle("OK", for: UIControl.State.normal)
         okButton.addTarget(self, action: #selector(okButtonAction), for: .touchUpInside)
         okButton.setTitleColor(UIColor.defaultButtonTextColor(), for: UIControl.State())
-        okButton.widthAnchor.constraint(equalToConstant: dialogViewWidth / 2).isActive = true
+        // okButton.widthAnchor.constraint(equalToConstant: dialogViewWidth / 2).isActive = true
+        okButton.widthAnchor.constraint(equalToConstant: dialogViewWidth).isActive = true
         okButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
     }
     
